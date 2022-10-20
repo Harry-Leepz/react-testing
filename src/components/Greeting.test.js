@@ -14,4 +14,12 @@ describe("Greeting Component", () => {
     const element = screen.getByText(/hello world/i);
     expect(element).toBeInTheDocument();
   });
+
+  test("Render text prior to button click", () => {
+    render(<Greeting />);
+
+    // Test to see if text can be found withing the component
+    const screenText = screen.getByText(/It's good to see you/i);
+    expect(screenText).toBeInTheDocument();
+  });
 });
