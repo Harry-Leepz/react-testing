@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Greeting from "./Greeting";
 
-// Grouping related component tests in  one suite
+// Grouping Tests together with a Test Suite
 describe("Greeting Component", () => {
   test("Render Hello World as text", () => {
     // Arrange - Import the components beings tested
